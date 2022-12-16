@@ -152,6 +152,9 @@
 
 .swiper-slide__img {
   height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero__container {

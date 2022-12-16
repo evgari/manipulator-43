@@ -11,7 +11,6 @@ html {
 }
 
 body {
-  height: 100%;
   min-width: 320px;
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
@@ -55,14 +54,14 @@ a {
   cursor: pointer;
 }
 
-.site-container {
+.page {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  height: 100%;
 }
 
 .main {
-  flex: 1 1 auto;
+  flex: 1 0 auto;
 }
 
 .container {
@@ -92,6 +91,17 @@ a {
 .btn_primary {
   color: var(--color-white);
   background-color: var(--color-accent);
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media (min-width: 1025px) {
+  .btn_primary:hover {
+    background-color: #b10e17;
+  }
+}
+
+.btn_primary:active {
+  background-color: #e1121d;
 }
 
 .title {
