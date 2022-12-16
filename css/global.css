@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   position: relative;
+  height: 100%;
 }
 
 *,
@@ -10,6 +11,7 @@ html {
 }
 
 body {
+  height: 100%;
   min-width: 320px;
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
@@ -53,6 +55,16 @@ a {
   cursor: pointer;
 }
 
+.site-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
 .container {
   max-width: 1300px;
   padding: 0 15px;
@@ -62,12 +74,13 @@ a {
 .fa-brands {
   font-size: 20px;
   line-height: 20px;
+  color: currentColor;
 }
 
 .fa-solid {
   font-size: 20px;
   line-height: 20px;
-  color: var(--color-white);
+  color: currentColor;
 }
 
 .btn {

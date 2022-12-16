@@ -1,5 +1,17 @@
 .cart__btn {
   position: relative;
+  color: var(--color-white);
+  transition: color 0.3s ease-in-out;
+}
+
+@media (min-width: 1025px) {
+  .cart__btn:hover {
+    color: var(--color-saffron);
+  }
+}
+
+.cart__btn:active {
+  color: var(--color-turbo);
 }
 
 .cart__count {
