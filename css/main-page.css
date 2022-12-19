@@ -324,7 +324,7 @@
   border-radius: 20px;
   padding: 20px;
   color: var(--color-white);
-  background-color: #303030;
+  background-color: var(--color-dark);
 }
 
 .reviews__par {

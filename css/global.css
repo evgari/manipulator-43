@@ -70,16 +70,13 @@ a {
   margin: 0 auto;
 }
 
-.fa-brands {
+.fa-brands,
+.fa-solid,
+.fa-regular {
   font-size: 20px;
   line-height: 20px;
   color: currentColor;
-}
-
-.fa-solid {
-  font-size: 20px;
-  line-height: 20px;
-  color: currentColor;
+  pointer-events: none;
 }
 
 .btn {
@@ -103,6 +100,13 @@ a {
 .btn_primary:active {
   background-color: #e1121d;
 }
+
+.btn_secondary {
+  color: var(--color-white);
+  background-color: var(--color-dark);
+  transition: background-color 0.3s ease-in-out;
+}
+
 
 .title {
   font-size: 32px;

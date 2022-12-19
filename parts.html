@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script src="https://kit.fontawesome.com/9eabca1831.js" crossorigin="anonymous"></script>
+  <script defer src="js/vendor/graph-modal.min.js"></script>
   <script type="module" src="js/vendor.js"></script>
   <script type="module" src="js/script.js"></script>
 </head>
@@ -166,126 +167,55 @@
         <div class="catalog__content">
           <div class="catalog__grid">
             <ul class="catalog-list list-reset">
-              <li class="catalog-list__item">
-                <article class="good">
-                  <div class="good__image">
-                    <img src="img/parts/example-3.png" alt="Продукт-1">
-                    <h4 class="good__title">Распределитель RM-316</h4>
-                    <div class="good__price">0 руб</div>
-                  </div>
-                  <div class="good__btns">
-                    <button class="btn-reset">
-                      <i class="fa-regular fa-eye"></i>
-                    </button>
-                    <button class="btn-reset">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                  </div>
-                  <!-- <a href="single-good.html" class="good__link"></a> -->
-                </article>
-              </li>
-              <li class="catalog-list__item">
-                <article class="good">
-                  <div class="good__image">
-                    <img src="img/parts/example-3.png" alt="Продукт-1">
-                    <h4 class="good__title">Распределитель RM-316</h4>
-                    <div class="good__price">0 руб</div>
-                  </div>
-                  <div class="good__btns">
-                    <button class="btn-reset">
-                      <i class="fa-regular fa-eye"></i>
-                    </button>
-                    <button class="btn-reset">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                  </div>
-                  <!-- <a href="single-good.html" class="good__link"></a> -->
-                </article>
-              </li>
-              <li class="catalog-list__item">
-                <article class="good">
-                  <div class="good__image">
-                    <img src="img/parts/example-3.png" alt="Продукт-1">
-                    <h4 class="good__title">Распределитель RM-316</h4>
-                    <div class="good__price">0 руб</div>
-                  </div>
-                  <div class="good__btns">
-                    <button class="btn-reset">
-                      <i class="fa-regular fa-eye"></i>
-                    </button>
-                    <button class="btn-reset">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                  </div>
-                  <!-- <a href="single-good.html" class="good__link"></a> -->
-                </article>
-              </li>
-              <li class="catalog-list__item">
-                <article class="good">
-                  <div class="good__image">
-                    <img src="img/parts/example-3.png" alt="Продукт-1">
-                    <h4 class="good__title">Распределитель RM-316</h4>
-                    <div class="good__price">0 руб</div>
-                  </div>
-                  <div class="good__btns">
-                    <button class="btn-reset">
-                      <i class="fa-regular fa-eye"></i>
-                    </button>
-                    <button class="btn-reset">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                  </div>
-                  <!-- <a href="single-good.html" class="good__link"></a> -->
-                </article>
-              </li>
+
             </ul>
+            <button class="catalog__more btn-reset btn btn_secondary">Показать ещё</button>
           </div>
 
           <div class="catalog__right sidebar">
-            <h3 class="sidebar__subtitle section-title">Подбор по параметрам</h3>
-            <div class="sidebar__prop">
-              <form action="#">
-                <div class="sidebar-search">
-                  <input class="sidebar-search__control" name="q" placeholder="Поиск" required type="text">
-                  <button class="btn-reset">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                </div>
-              </form>
-            </div>
-            <div class="sidebar__prop">
-              <ul class="category-list list-reset">
-                <li class="category-list__item">
-                  <a href="archive.html" class="category-list__link">
-                    <div>Категория</div>
-                    <div>05</div>
-                  </a>
-                </li>
-                <li class="category-list__item">
-                  <a href="archive.html" class="category-list__link">
-                    <div>Категория</div>
-                    <div>03</div>
-                  </a>
-                </li>
-                <li class="category-list__item">
-                  <a href="archive.html" class="category-list__link">
-                    <div>Категория</div>
-                    <div>05</div>
-                  </a>
-                </li>
-                <li class="category-list__item">
-                  <a href="archive.html" class="category-list__link">
-                    <div>Категория</div>
-                    <div>05</div>
-                  </a>
-                </li>
-                <li class="category-list__item">
-                  <a href="archive.html" class="category-list__link">
-                    <div>Категория</div>
-                    <div>05</div>
-                  </a>
-                </li>
-              </ul>
+            <div class="sidebar">
+              <h3 class="sidebar__subtitle section-title">Подбор по параметрам</h3>
+              <div class="sidebar__prop">
+                <form action="#">
+                  <div class="sidebar-search">
+                    <input class="sidebar-search__control" name="q" placeholder="Поиск" required type="text">
+                    <button class="btn-reset">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="sidebar__prop">
+                <ul class="category-list list-reset">
+                  <li class="category-list__item">
+                    <a href="#" class="category-list__link">Монтажные изделия</a>
+                  </li>
+                  <li class="category-list__item">
+                    <a href="#" class="category-list__link">Монтажные изделия</a>
+                  </li>
+                  <li class="category-list__item">
+                    <a href="#" class="category-list__link">Монтажные изделия</a>
+                  </li>
+                  <li class="category-list__item">
+                    <a href="#" class="category-list__link">Монтажные изделия</a>
+                  </li>
+                  <li class="category-list__item">
+                    <a href="#" class="category-list__link">Монтажные изделия</a>
+                  </li>
+                  <li class="category-list__item">
+                    <a href="#" class="category-list__link">Монтажные изделия</a>
+                  </li>
+                  <li class="category-list__item">
+                    <a href="#" class="category-list__link">Монтажные изделия</a>
+                  </li>
+                  <li class="category-list__item">
+                    <a href="#" class="category-list__link">Монтажные изделия</a>
+                  </li>
+                  <li class="category-list__item">
+                    <a href="#" class="category-list__link">Монтажные изделия</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div> 
@@ -313,5 +243,63 @@
        </div> 
     </div>
   </footer>
+
+  <div class="modal">
+    <div class="modal__container prod-modal" role="dialog" aria-modal="true" data-graph-target="prod-modal">
+      <button class="btn-reset modal__close" aria-label="Закрыть модальное окно"></button>
+      <div class="modal-content">
+        <div class="prod-modal__top">
+          <div class="modal-slider">
+            <div class="modal-slider__container swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="resourses/data/images/1/1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="resourses/data/images/1/1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="resourses/data/images/1/1.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="modal-preview">
+              <div class="modal-preview__item" data-index="0">
+                <img src="resourses/data/images/1/1.png" alt="">
+              </div>
+              <div class="modal-preview__item" data-index="1">
+                <img src="resourses/data/images/1/1.png" alt="">
+              </div>
+              <div class="modal-preview__item" data-index="2">
+                <img src="resourses/data/images/1/1.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="modal-info">
+            <div class="modal-info__top">
+              <span class="modal-info__vendor">Артикул: 879876</span>
+              <span class="modal-info__quantity">В наличии: <span>13 шт</span></span>
+            </div>
+            <h3 class="modal-info__title">Привод насоса</h3>
+            <div class="modal-info__price">
+              <span class="modal-info__current-price">19 789 р</span>
+            </div>
+            <button class="btn-reset btn btn_primary">Заказать</button>
+            <ul class="modal-info__note modal-note list-reset">
+              <li class="modal-note__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li class="modal-note__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              <li class="modal-note__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="prod-modal__bottom">
+          <h4 class="prod-modal__subtitle">Описание</h4>
+          <p class="prod-modal__descr">
+            Разнообразный и богатый опыт реализация намеченных плановых заданий требуют от нас анализа форм развития. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании систем массового участия. Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание направлений прогрессивного развития.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

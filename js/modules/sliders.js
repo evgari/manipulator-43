@@ -1,5 +1,6 @@
 const heroSlider = document.querySelector('.hero__slider');
 const reviewsSlider = document.querySelector('.reviews__slider .swiper');
+const prodSlider = document.querySelector('.modal-slider__container');
 
 const slider = new Swiper(heroSlider, {
   autoplay: {
@@ -27,4 +28,12 @@ const slider2 = new Swiper(reviewsSlider, {
     el: '.swiper-pagination',
   },
 });
+
+const slider3 = new Swiper(prodSlider, {
+  slidesPerView: 1,
+  spaceBetween: 20,
+});
+
+export default slider3;
+
 
